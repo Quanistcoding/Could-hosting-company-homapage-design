@@ -491,6 +491,7 @@ a {
 
 /* Testimonials */
 .testimonial {
+  margin: 2rem;
   padding: 3rem;
 }
 
