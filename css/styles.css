@@ -531,6 +531,10 @@ a {
   text-align: center;
 }
 
+.callout-signup {
+  transform: translateY(7rem);
+}
+
 .callout__heading {
   color: #fff;
   margin-top: 0;
