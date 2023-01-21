@@ -203,7 +203,7 @@ a {
   font-weight: bold;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   color: #fff;
@@ -292,6 +292,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -429,6 +430,7 @@ a {
 .quote {
   font-weight: 600;
   color: var(--color-body-darker);
+  word-break: break-all;
 }
 
 .quote__text {
@@ -730,8 +732,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   align-items: center;
   justify-items: center;
@@ -739,6 +742,12 @@ a {
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 400px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -777,6 +786,7 @@ a {
 /* Feature Block */
 .feature_block {
   padding: 0;
+  margin-top: 5rem;
 }
 
 .feature-block__image {
