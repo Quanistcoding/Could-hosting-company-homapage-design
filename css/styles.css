@@ -783,7 +783,7 @@ a {
   transition: transform 0.2s ease-out;
 }
 .plan-group {
-  margin: 1rem;
+  margin: 1rem auto;
   grid-gap: 4rem 4rem;
 }
 
