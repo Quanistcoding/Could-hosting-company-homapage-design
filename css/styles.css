@@ -430,7 +430,7 @@ a {
 .quote {
   font-weight: 600;
   color: var(--color-body-darker);
-  word-break: break-all;
+  margin: 1rem 1rem;
 }
 
 .quote__text {
@@ -459,6 +459,18 @@ a {
 
 .quote_author {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 580px) {
+  .quote {
+    margin: 3rem 0 0 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    margin-left: 6rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -494,12 +506,13 @@ a {
 
 /* Testimonials */
 .testimonial {
-  margin: 2rem;
-  padding: 3rem;
+  margin: 1rem;
+  padding: 0.2rem;
+  word-break: normal;
 }
 
-.testimonial .quote {
-  margin-left: 6rem;
+.testimonial .media {
+  justify-content: end;
 }
 
 .testimonial__image {
@@ -521,6 +534,11 @@ a {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
+  }
+
+  .testimonial {
+    margin: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -765,6 +783,7 @@ a {
   transition: transform 0.2s ease-out;
 }
 .plan-group {
+  margin: 1rem;
   grid-gap: 4rem 4rem;
 }
 
